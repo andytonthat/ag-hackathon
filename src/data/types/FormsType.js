@@ -9,9 +9,8 @@ const FormsType = new ObjectType({
   fields: {
     recallCoordinator: { type: new NonNull(StringType) },
     dateTime: { type: new NonNull(StringType) },
-    reason: { type: new StringType },
+    reason: { type: new NonNull(StringType) },
   },
 });
 
-
-export default FormsType;
+export default FormsType
