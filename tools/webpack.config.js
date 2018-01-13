@@ -21,8 +21,10 @@ const isAnalyze =
   process.argv.includes('--analyze') || process.argv.includes('--analyse');
 
 const reScript = /\.(js|jsx|mjs)$/;
+const reGraphql = /\.(graphql|gql)$/;
 const reStyle = /\.(css|less|styl|scss|sass|sss)$/;
 const reImage = /\.(bmp|gif|jpg|jpeg|png|svg)$/;
+
 const staticAssetName = isDebug
   ? '[path][name].[ext]?[hash:8]'
   : '[hash:8].[ext]';
@@ -115,6 +117,13 @@ const config = {
             ...(isDebug ? [] : ['transform-react-remove-prop-types']),
           ],
         },
+      },
+
+      // Rules for GraphQL
+      {
+        test: reGraphql,
+        exclude: /node_modules/,
+        loader: 'graphql-tag/loader',
       },
 
       // Rules for Style Sheets
@@ -237,7 +246,15 @@ const config = {
       // Return public URL for all assets unless explicitly excluded
       // DO NOT FORGET to update `exclude` list when you adding a new loader
       {
-        exclude: [reScript, reStyle, reImage, /\.json$/, /\.txt$/, /\.md$/],
+        exclude: [
+          reScript,
+          reStyle,
+          reImage,
+          reGraphql,
+          /\.json$/,
+          /\.txt$/,
+          /\.md$/,
+        ],
         loader: 'file-loader',
         options: {
           name: staticAssetName,
@@ -433,7 +450,8 @@ const serverConfig = {
           ...rule,
           options: {
             ...rule.options,
-            emitFile: false,
+            name: `public/assets/${rule.options.name}`,
+            publicPath: url => url.replace(/^public/, ''),
           },
         };
       }
