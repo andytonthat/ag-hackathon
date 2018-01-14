@@ -10,12 +10,43 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import history from '../../history';
 import s from './Traceback.scss';
 import Subnav from '../../components/Subnav';
+
+function isLeftClickEvent(event) {
+  return event.button === 0;
+}
+
+function isModifiedEvent(event) {
+  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+}
 
 class Traceback extends React.Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
+    onClick: PropTypes.func,
+  };
+
+  static defaultProps = {
+    onClick: null,
+  };
+
+  fakeRedirect = event => {
+    if (this.props.onClick) {
+      this.props.onClick(event);
+    }
+
+    if (isModifiedEvent(event) || !isLeftClickEvent(event)) {
+      return;
+    }
+
+    if (event.defaultPrevented === true) {
+      return;
+    }
+
+    event.preventDefault();
+    // history.push(this.props.to);
   };
 
   render() {
@@ -25,7 +56,14 @@ class Traceback extends React.Component {
         <div className={s.container}>
           <h1>{this.props.title}</h1>
           <br />Traceback ID:
-          <input type="text" />
+          <input type="text" placeholder="098zyx765a" />
+          <input
+            type="button"
+            value="Search"
+            onClick={() => {
+              history.push(`/`);
+            }}
+          />
         </div>
       </div>
     );
