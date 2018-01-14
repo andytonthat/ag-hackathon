@@ -53,7 +53,6 @@ class RecallForm extends React.Component {
 
   handlePost = async event => {
     event.preventDefault();
-
     const { name, contactInfo, dateTime, recallReason } = this.state;
     await this.props.createRecallMutation({
       variables: { name, contactInfo, dateTime, recallReason },
@@ -70,17 +69,17 @@ class RecallForm extends React.Component {
             <h1>FORM 1: Property Information</h1>
             {/* <label> */}
             Recall Coordinator:
-            <input type="text" name="name" />
+            <input id="name" type="text" name="name" onChange={this.handleChange} />
             {/* </label> */}
             <br />
             {/* <label> */}
             Contact Information:
-            <input type="text" name="contactInfo" />
+            <input id="contactInfo" type="text" name="contactInfo" onChange={this.handleChange}  />
             {/* </label> */}
             <br />
             {/* <label> */}
             Date/Time:
-            <input type="datetime" name="dateTime" />
+            <input id="dateTime" type="string" name="dateTime" onChange={this.handleChange}  />
             {/* </label> */}
             <br />
             <p>
@@ -95,7 +94,7 @@ class RecallForm extends React.Component {
             (biological, chemical or physical contamination) and how the product
             deficiency was discovered.
             <br />
-            <textarea name="recallReason" cols="125" rows="5" />
+            <textarea id="recallReason" name="recallReason" cols="125" rows="5" onChange={this.handleChange}  />
             {/* </label> */}
             <br />
             <input type="submit" value="Submit" />

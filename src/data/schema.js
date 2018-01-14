@@ -14,6 +14,7 @@ import {
 
 import me from './queries/me';
 import news from './queries/news';
+import recall from './queries/recall';
 
 const schema = new Schema({
   query: new ObjectType({
