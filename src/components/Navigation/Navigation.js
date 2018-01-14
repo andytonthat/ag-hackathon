@@ -36,6 +36,9 @@ class Navigation extends React.Component {
             <Link className={s.link} to="/forms">
               Forms
             </Link>
+            <Link className={s.link} to="/resources">
+              Resources
+            </Link>
           </div>
         </div>
         <div className={s.half}>

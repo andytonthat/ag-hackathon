@@ -47,6 +47,10 @@ const routes = {
       path: '/forms',
       load: () => import(/* webpackChunkName: 'forms' */ './forms'),
     },
+    {
+      path: '/resources',
+      load: () => import(/* webpackChunkName: 'resources' */ './resources'),
+    },
 
     // Wildcard routes, e.g. { path: '(.*)', ... } (must go last)
     {
