@@ -22,7 +22,40 @@ class Contact extends React.Component {
       <div className={s.root}>
         <div className={s.container}>
           <h1>{this.props.title}</h1>
-          <p>...</p>
+          <form>
+            <h1>FORM 1: Property Information</h1>
+            {/* <label> */}
+            Recall Coordinator:
+            <input type="text" name="name" />
+            {/* </label> */}
+            <br />
+            {/* <label> */}
+            Contact Information:
+            <input type="text" name="name" />
+            {/* </label> */}
+            <br />
+            {/* <label> */}
+            Date/Time:
+            <input type="datetime" name="name" />
+            {/* </label> */}
+            <br />
+            <p>
+              For more information on how to submit a product recall and FDA
+              guidelines, please visit the FDA Guidance for Industry: Product
+              Recalls, Including Removals and Corrections page:
+              http://www.fda.gov/Safety/Recalls/IndustryGuidance/ucm129259.htm
+            </p>
+            <br />
+            {/* <label> */}
+            <b>Reason for Recall</b>: Describe the reason for the recall
+            (biological, chemical or physical contamination) and how the product
+            deficiency was discovered.
+            <br />
+            <textarea name="Text1" cols="125" rows="5" />
+            {/* </label> */}
+            <br />
+            <input type="submit" value="Submit" />
+          </form>
         </div>
       </div>
     );
