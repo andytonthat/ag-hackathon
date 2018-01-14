@@ -33,6 +33,9 @@ class RecallForm extends React.Component {
     };
   }
 
+
+
+
   handleClear = () => {
     this.setState({
       name: '',
@@ -112,20 +115,14 @@ const CREATE_RECALL_MUTATION = gql`
     $dateTime: String!
     $recallReason: String!
   ) {
-    createPost(
-      name: $name
-      contactInfo: $contactInfo
-      dateTime: $dateTime
-      recallReason: $recallReason
-    ) {
-      id
       name
       contactInfo
       dateTime
       recallReason
-    }
   }
 `;
+
+
 const RecallFormWithMutation = graphql(CREATE_RECALL_MUTATION, {
   name: 'createRecallMutation',
 })(RecallForm);
