@@ -11,6 +11,7 @@ import React from 'react';
 import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Header.scss';
+import mac from './macbookmain.png';
 
 class Header extends React.Component {
   render() {
@@ -18,15 +19,17 @@ class Header extends React.Component {
       <div className={s.root}>
         <div className={s.container}>
           <div className={cx(s.banner, s.bannerLeft)}>
-            <h1 className={s.bannerTitle}>Follow the Aina</h1>
+            <h1 className={s.bannerTitle}>Follow the &#39;&#x0100;ina</h1>
             <p className={s.bannerDesc}>
               An easy-to-use solution to grow and manage your farm and its
               business.
             </p>
+            <div className={s.contactButton}>
+              <div>Get Started Now</div>
+            </div>
           </div>
           <div className={cx(s.banner, s.bannerRight)}>
-            <h1 className={s.bannerTitle}>React</h1>
-            <p className={s.bannerDesc}>Complex web apps made easy</p>
+            <img src={mac} width="40%" alt="Computer" />
           </div>
         </div>
       </div>
