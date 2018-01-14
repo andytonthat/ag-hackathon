@@ -9,7 +9,7 @@
 // import formsQuery from '../../forms/forms.graphql';
 import React from 'react';
 // import PropTypes from 'prop-types';
-import Recall from './Recall';
+import RecallForm from './Recall';
 import Layout from '../../../components/Layout';
 
 const title = 'Recall';
@@ -19,7 +19,7 @@ function action() {
     title,
     component: (
       <Layout>
-        <Recall title={title} />
+        <RecallForm title={title} />
       </Layout>
     ),
   };

@@ -9,12 +9,56 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { graphql } from 'react-apollo';
+import gql from 'graphql-tag';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+// import history from '../../../history';
 import s from './Recall.css';
 
-class Contact extends React.Component {
+class RecallForm extends React.Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
+    history: PropTypes.string.isRequired,
+    createRecallMutation: PropTypes.func.isRequired,
+  };
+
+  constructor() {
+    super();
+
+    this.state = {
+      name: '',
+      contactInfo: '',
+      dateTime: '',
+      recallReason: '',
+    };
+  }
+
+  handleClear = () => {
+    this.setState({
+      name: '',
+      contactInfo: '',
+      dateTime: '',
+      recallReason: '',
+    });
+  };
+
+  handleChange = event => {
+    const { target } = event;
+    const { name, value } = target;
+
+    this.setState({
+      [name]: value,
+    });
+  };
+
+  handlePost = async event => {
+    event.preventDefault();
+
+    const { name, contactInfo, dateTime, recallReason } = this.state;
+    await this.props.createRecallMutation({
+      variables: { name, contactInfo, dateTime, recallReason },
+    });
+    this.props.history.replace('/');
   };
 
   render() {
@@ -22,7 +66,7 @@ class Contact extends React.Component {
       <div className={s.root}>
         <div className={s.container}>
           <h1>{this.props.title}</h1>
-          <form>
+          <form onSubmit={this.handlePost}>
             <h1>FORM 1: Property Information</h1>
             {/* <label> */}
             Recall Coordinator:
@@ -31,12 +75,12 @@ class Contact extends React.Component {
             <br />
             {/* <label> */}
             Contact Information:
-            <input type="text" name="name" />
+            <input type="text" name="contactInfo" />
             {/* </label> */}
             <br />
             {/* <label> */}
             Date/Time:
-            <input type="datetime" name="name" />
+            <input type="datetime" name="dateTime" />
             {/* </label> */}
             <br />
             <p>
@@ -51,7 +95,7 @@ class Contact extends React.Component {
             (biological, chemical or physical contamination) and how the product
             deficiency was discovered.
             <br />
-            <textarea name="Text1" cols="125" rows="5" />
+            <textarea name="recallReason" cols="125" rows="5" />
             {/* </label> */}
             <br />
             <input type="submit" value="Submit" />
@@ -62,4 +106,29 @@ class Contact extends React.Component {
   }
 }
 
-export default withStyles(s)(Contact);
+const CREATE_RECALL_MUTATION = gql`
+  mutation CreateRecallMutation(
+    $name: String!
+    $contactInfo: String!
+    $dateTime: String!
+    $recallReason: String!
+  ) {
+    createPost(
+      name: $name
+      contactInfo: $contactInfo
+      dateTime: $dateTime
+      recallReason: $recallReason
+    ) {
+      id
+      name
+      contactInfo
+      dateTime
+      recallReason
+    }
+  }
+`;
+const RecallFormWithMutation = graphql(CREATE_RECALL_MUTATION, {
+  name: 'createRecallMutation',
+})(RecallForm);
+
+export default withStyles(s)(RecallFormWithMutation);
