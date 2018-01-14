@@ -44,16 +44,20 @@ const routes = {
       load: () => import(/* webpackChunkName: 'admin' */ './admin'),
     },
     {
-      path: '/forms',
-      load: () => import(/* webpackChunkName: 'forms' */ './forms'),
-    },
-    {
       path: '/resources',
       load: () => import(/* webpackChunkName: 'resources' */ './resources'),
     },
     {
       path: '/profile',
       load: () => import(/* webpackChunkName: 'resources' */ './profile'),
+    },
+    {
+      path: '/traceback',
+      load: () => import(/* webpackChunkName: 'resources' */ './traceback'),
+    },
+    {
+      path: '/forms',
+      load: () => import(/* webpackChunkName: 'forms' */ './forms'),
     },
     {
       path: '/forms/recall',

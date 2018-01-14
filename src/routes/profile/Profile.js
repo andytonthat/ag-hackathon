@@ -24,8 +24,9 @@ class Profile extends React.Component {
         <Subnav />
         <div className={s.container}>
           <h1>{this.props.title}</h1>
-          <br />ID: 123abc456z
           <br />(Company) Name: Local Kine
+          <br />ID: 789
+          <br />Traceback ID: 123abc456z
           <br />Lots: 3
           <br />Primary: Taro
           <br />Secondary: Kale, Carrots
