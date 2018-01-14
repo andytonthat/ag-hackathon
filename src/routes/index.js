@@ -55,13 +55,20 @@ const routes = {
       path: '/forms/recall',
       load: () => import(/* webpackChunkName: 'resources' */ './forms/recall'),
     },
+    {
+      path: '/forms/product-information',
+      load: () => import(/* webpackChunkName: 'resources' */ './forms/product-information'),
+    },
+    {
+      path: '/forms/traceback',
+      load: () => import(/* webpackChunkName: 'resources' */ './forms/traceback'),
+    },
 
     // Wildcard routes, e.g. { path: '(.*)', ... } (must go last)
     {
       path: '(.*)',
       load: () => import(/* webpackChunkName: 'not-found' */ './not-found'),
     },
-    
   ],
 
   async action({ next }) {
