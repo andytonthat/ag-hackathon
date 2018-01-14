@@ -11,6 +11,7 @@ import React from 'react';
 // import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import Layout from '../../../components/Layout';
 import '../Product.css';
+import Subnav from '../../../components/Subnav';
 
 const title = 'Contact Us';
 function action() {
@@ -19,6 +20,7 @@ function action() {
     title,
     component: (
       <Layout>
+        <Subnav />
         <h1>Agricultural Inputs</h1>
         <h3>
           Instructions: Includes all applications from pre-planting through to,

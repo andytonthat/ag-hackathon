@@ -21,7 +21,7 @@ class Feedback extends React.Component {
             <p>We’re here to help you. We’re here every step of the way.</p>
           </div>
           <div className={s.contactRight}>
-            <Link className={s.link} to="/">
+            <Link className={s.link} to="/contact">
               <div className={s.contactButton}>
                 <div>Contact Us</div>
               </div>

@@ -11,6 +11,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Resources.css';
+import Subnav from '../../components/Subnav';
 
 class Resources extends React.Component {
   static propTypes = {
@@ -20,9 +21,14 @@ class Resources extends React.Component {
   render() {
     return (
       <div className={s.root}>
+        <Subnav />
         <div className={s.container}>
           <h1>{this.props.title}</h1>
-          <p>...</p>
+          <p>
+            More resources are coming soon! We will soon be implementing a form
+            look-up, just in case you want to recall a form you need! We will
+            keep you posted!
+          </p>
         </div>
       </div>
     );

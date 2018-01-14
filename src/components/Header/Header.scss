@@ -34,9 +34,15 @@
 }
 
 .banner {
-  text-align: center;
+  text-align: left;
   width: 50%;
   max-width: 50%;
+  margin: 0 0 0 10%;
+  box-sizing: border-box;
+
+  h1 {
+    padding: 0;
+  }
 
   .bannerLeft {
     float: left;

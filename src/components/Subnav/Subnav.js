@@ -9,14 +9,14 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Navigation.scss';
+import s from './Subnav.scss';
 import Link from '../Link';
 import logoUrl from './logo.svg';
 
-class Navigation extends React.Component {
+class Subnav extends React.Component {
   render() {
     return (
-      <div className={s.root} role="navigation">
+      <div className={s.root} role="Navigation">
         <div className={s.half}>
           <div className={s.navLeft}>
             <Link className={s.link} to="/">
@@ -52,4 +52,4 @@ class Navigation extends React.Component {
   }
 }
 
-export default withStyles(s)(Navigation);
+export default withStyles(s)(Subnav);

@@ -11,6 +11,7 @@ import React from 'react';
 // import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import Layout from '../../../components/Layout';
 import '../FoodSafety.css';
+import Subnav from '../../../components/Subnav';
 
 const title = 'Contact Us';
 function action() {
@@ -19,6 +20,7 @@ function action() {
     title,
     component: (
       <Layout>
+        <Subnav />
         <h1>Food Safety Plan Audit Log</h1>
         {/* <label> */}
         Operation Name:

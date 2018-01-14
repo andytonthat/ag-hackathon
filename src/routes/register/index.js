@@ -10,6 +10,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import Register from './Register';
+import Subnav from '../../components/Subnav';
 
 const title = 'New User Registration';
 
@@ -19,6 +20,7 @@ function action() {
     title,
     component: (
       <Layout>
+        <Subnav />
         <Register title={title} />
       </Layout>
     ),

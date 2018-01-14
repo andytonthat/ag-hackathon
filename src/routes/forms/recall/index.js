@@ -11,6 +11,7 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import RecallForm from './Recall';
 import Layout from '../../../components/Layout';
+import Subnav from '../../../components/Subnav';
 
 const title = 'Recall';
 
@@ -19,6 +20,7 @@ function action() {
     title,
     component: (
       <Layout>
+        <Subnav />
         <RecallForm title={title} />
       </Layout>
     ),

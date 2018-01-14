@@ -18,8 +18,11 @@ class Header extends React.Component {
       <div className={s.root}>
         <div className={s.container}>
           <div className={cx(s.banner, s.bannerLeft)}>
-            <h1 className={s.bannerTitle}>React</h1>
-            <p className={s.bannerDesc}>Complex web apps made easy</p>
+            <h1 className={s.bannerTitle}>Follow the Aina</h1>
+            <p className={s.bannerDesc}>
+              An easy-to-use solution to grow and manage your farm and its
+              business.
+            </p>
           </div>
           <div className={cx(s.banner, s.bannerRight)}>
             <h1 className={s.bannerTitle}>React</h1>
