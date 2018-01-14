@@ -19,16 +19,25 @@ function action() {
     title,
     component: (
       <Layout>
-        <h1>FORM 2: Product Information</h1>
+        <h1>Deviations and Corrective Action Log</h1>
+        <h3>
+          Instructions: List all major deviations, complaints and their related
+          cause(s), corrective action(s), preventative measures and modified
+          procedures. Record that employees have been trained on the new
+          procedures.
+        </h3>
         <table>
           <tr>
-            <th>Product:</th>
-            <th>Lot Number/ Code/Date:</th>
-            <th>Lot Quantity:</th>
-            <th>Name/Location:</th>
-            <th>Date Shipped:</th>
-            <th>Quantity Left On-Farm:</th>
-            <th>Quantity Shipped and Requiring Recovery:</th>
+            <th>Date/Time of Deviation or Complaint and Person Notified</th>
+            <th>Major Deviation/Complaint and Description</th>
+            <th>Corrective Action(s)</th>
+            <th>Prevention of Recurrence(e.g., training employee)</th>
+            <th>New/Modified Procedures</th>
+            <th>Employees Trained on New/ Modified Procedures?</th>
+            <th>
+              Signature of Person Responsible for Re-Training/ Carrying out
+              Deviation Procedure
+            </th>
           </tr>
           <tr>
             <td>

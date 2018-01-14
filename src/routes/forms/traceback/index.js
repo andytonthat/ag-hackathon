@@ -259,6 +259,7 @@ function action() {
             </td>
           </tr>
         </table>
+        <br />
         <input type="submit" value="Submit" />
       </Layout>
     ),

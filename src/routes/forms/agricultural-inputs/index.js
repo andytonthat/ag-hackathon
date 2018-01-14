@@ -19,47 +19,54 @@ function action() {
     title,
     component: (
       <Layout>
-        <h1>FORM 2: Product Information</h1>
+        <h1>Agricultural Inputs</h1>
+        <h3>
+          Instructions: Includes all applications from pre-planting through to,
+          and including, harvest. One Form must be completed for EACH PRODUCTION
+          SITE.{' '}
+        </h3>
+        {/* <label> */}
+        Producer Name:
+        <input type="text" name="name" />
+        {/* </label> */}
+        {/* <label> */}
+        Previous Year Crop(s):
+        <input type="text" name="name" />
+        {/* </label> */}
+        {/* <label> */}
+        <br />
+        <br />
+        Current Crop:
+        <input type="text" name="name" />
+        {/* </label> */}
+        {/* <label> */}
+        Production Site Information (e.g., Field # or Name/ID):
+        <input type="text" name="name" />
+        {/* </label> */}
+        <br />
+        <br />
+        {/* <label> */}
+        Production Site Area (e.g., # of acres/hectares):
+        <input type="text" name="name" />
+        {/* </label> */}
+        {/* <label> */}
+        Date Planted:
+        <input type="text" name="name" />
+        {/* </label> */}
+        {/* <label> */}
+        Variety:
+        <input type="text" name="name" />
+        {/* </label> */}
+        <h3>COMMERCIAL FERTILIZER APPLICATION</h3>
         <table>
           <tr>
-            <th>Product:</th>
-            <th>Lot Number/ Code/Date:</th>
-            <th>Lot Quantity:</th>
-            <th>Name/Location:</th>
-            <th>Date Shipped:</th>
-            <th>Quantity Left On-Farm:</th>
-            <th>Quantity Shipped and Requiring Recovery:</th>
+            <th>Date</th>
+            <th>Blend</th>
+            <th>Rate</th>
+            <th>Fertilizer Lot # (if applicable)</th>
+            <th>Applicator’s Name</th>
           </tr>
           <tr>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
             <td>
               <input type="text" name="name" />
             </td>
@@ -92,43 +99,8 @@ function action() {
             <td>
               <input type="text" name="name" />
             </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
           </tr>
           <tr>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <input type="text" name="name" />
-            </td>
-            <td>
-              <input type="text" name="name" />
-            </td>
             <td>
               <input type="text" name="name" />
             </td>
@@ -161,6 +133,17 @@ function action() {
             <td>
               <input type="text" name="name" />
             </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" name="name" />
+            </td>
+            <td>
+              <input type="text" name="name" />
+            </td>
+            <td>
+              <input type="text" name="name" />
+            </td>
             <td>
               <input type="text" name="name" />
             </td>
@@ -175,6 +158,17 @@ function action() {
             <td>
               <input type="text" name="name" />
             </td>
+            <td>
+              <input type="text" name="name" />
+            </td>
+            <td>
+              <input type="text" name="name" />
+            </td>
+            <td>
+              <input type="text" name="name" />
+            </td>
+          </tr>
+          <tr>
             <td>
               <input type="text" name="name" />
             </td>

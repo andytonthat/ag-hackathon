@@ -19,16 +19,23 @@ function action() {
     title,
     component: (
       <Layout>
-        <h1>FORM 2: Product Information</h1>
+        <h1>Water Testing Result Log</h1>
+        {/* <label> */}
+        Save any documents providing information on test methods and test
+        results from your laboratory. {/* </label> */}
+        <br />
         <table>
           <tr>
-            <th>Product:</th>
-            <th>Lot Number/ Code/Date:</th>
-            <th>Lot Quantity:</th>
-            <th>Name/Location:</th>
-            <th>Date Shipped:</th>
-            <th>Quantity Left On-Farm:</th>
-            <th>Quantity Shipped and Requiring Recovery:</th>
+            <th>Inspection Date:</th>
+            <th>Location/Field:</th>
+            <th>
+              Physical, Chemical and/or Biological Contamination Risks
+              Identified?
+            </th>
+            <th>Corrective and/or Preventative Actions (if necessary):</th>
+            <th>Identified by (Initials):</th>
+            <th>Date Corrective Action Completed:</th>
+            <th>Completed by (Initials):</th>
           </tr>
           <tr>
             <td>

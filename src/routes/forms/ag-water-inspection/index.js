@@ -19,16 +19,35 @@ function action() {
     title,
     component: (
       <Layout>
-        <h1>FORM 2: Product Information</h1>
+        <h1>Agricultural Water Inspection Log</h1>
+        {/* <label> */}
+        Depending on the contamination risk identified,{' '}
+        <b>some corrective actions</b> options may include: Construct barriers
+        (e.g., fences, ditches, storage pits); Control runoff with sod strips,
+        grass waterways, vegetative buffers, etc.; Level ground to prevent
+        runoff; Spread manure during dry weather or incorporate manure within 24
+        hours of spreading; Leave a manure-free protective strip at least 10 m
+        wide around surface water sources; Ensure all equipment is
+        well-maintained; Ensure equipment is not cleaned, maintained or drained
+        where the water source may become contaminated; Ensure proper operation
+        of sewer/septic system; Install aeration or filtration systems; Follow
+        expert advice; Irrigate in the morning to increase rapid drying and
+        reduce pathogen survival with ultra violet light; Allow as long a period
+        as possible between irrigating and harvest; Retest water for Total
+        Coliforms and E. coli using an accredited lab; Do not irrigate.
+        {/* </label> */}
         <table>
           <tr>
-            <th>Product:</th>
-            <th>Lot Number/ Code/Date:</th>
-            <th>Lot Quantity:</th>
-            <th>Name/Location:</th>
-            <th>Date Shipped:</th>
-            <th>Quantity Left On-Farm:</th>
-            <th>Quantity Shipped and Requiring Recovery:</th>
+            <th>Inspection Date:</th>
+            <th>Location/Field:</th>
+            <th>
+              Physical, Chemical and/or Biological Contamination Risks
+              Identified?
+            </th>
+            <th>Corrective and/or Preventative Actions (if necessary):</th>
+            <th>Identified by (Initials):</th>
+            <th>Date Corrective Action Completed:</th>
+            <th>Completed by (Initials):</th>
           </tr>
           <tr>
             <td>
