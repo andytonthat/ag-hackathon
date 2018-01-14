@@ -110,18 +110,32 @@ class RecallForm extends React.Component {
 
 const CREATE_RECALL_MUTATION = gql`
   mutation CreateRecallMutation(
-    $name: String!
-    $contactInfo: String!
-    $dateTime: String!
-    $recallReason: String!
+    $name: String,
+    $contactInfo: String,
+    $dateTime: String,
+    $recallReason: String
   ) {
-      name
-      contactInfo
-      dateTime
-      recallReason
+    name(
+      name: $name){
+        name
   }
+    contactInfo(
+      contactInfo: $contactInfo
+    ){
+      contactInfo
+    }
+    dateTime(
+      dateTime: $dateTime
+    ){
+      dateTime
+    }
+    recallReason(
+      recallReason: $recallReason
+    ){
+      recallReason
+    }
+}
 `;
-
 
 const RecallFormWithMutation = graphql(CREATE_RECALL_MUTATION, {
   name: 'createRecallMutation',

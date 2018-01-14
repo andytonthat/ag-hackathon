@@ -14,7 +14,7 @@ const recall = {
   resolve({ request }) {
     return (
       request.user && {
-        id: request.user.id,
+        name: request.user.name,
         contactInfo: request.user.contactInfo,
         dateTime: request.user.dateTime,
         recallReason: request.user.recallReason,
@@ -22,5 +22,6 @@ const recall = {
     );
   },
 };
+
 
 export default recall;

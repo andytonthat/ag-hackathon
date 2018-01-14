@@ -10,6 +10,8 @@
 import {
   GraphQLSchema as Schema,
   GraphQLObjectType as ObjectType,
+  GraphQLNonNull as NonNull,
+  GraphQLString as StringType,
 } from 'graphql';
 
 import me from './queries/me';
@@ -26,11 +28,12 @@ const schema = new Schema({
     },
   }),
   mutation: new ObjectType({
-    name: 'Mutation',
+    name: 'CreateRecallMutation',
     fields: {
-      me,
-      news,
-      recall,
+      name: { type: StringType },
+      contactInfo: { type: StringType },
+      dateTime: { type: StringType },
+      recallReason: { type: StringType },
     },
   }),
 });
