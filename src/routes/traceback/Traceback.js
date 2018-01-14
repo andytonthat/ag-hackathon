@@ -61,7 +61,7 @@ class Traceback extends React.Component {
             type="button"
             value="Search"
             onClick={() => {
-              history.push(`/`);
+              history.push(`/traceback/demo`);
             }}
           />
         </div>
