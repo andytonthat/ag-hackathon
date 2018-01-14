@@ -71,7 +71,34 @@ const routes = {
       path: '/forms/standard-operating-procedures',
       load: () => import(/* webpackChunkName: 'resources' */ './forms/standard-operating-procedures'),
     },
-
+    {
+      path: '/forms/deviations-corrective-action',
+      load: () => import(/* webpackChunkName: 'resources' */ './forms/deviations-corrective-action'),
+    },
+    {
+      path: '/forms/agricultural-inputs',
+      load: () => import(/* webpackChunkName: 'resources' */ './forms/agricultural-inputs'),
+    },
+    {
+      path: '/forms/risk-assessment-land',
+      load: () => import(/* webpackChunkName: 'resources' */ './forms/risk-assessment-land'),
+    },
+    {
+      path: '/forms/ag-water-inspection',
+      load: () => import(/* webpackChunkName: 'resources' */ './forms/ag-water-inspection'),
+    },
+    {
+      path: '/forms/risk-assessment-field',
+      load: () => import(/* webpackChunkName: 'resources' */ './forms/risk-assessment-field'),
+    },
+    {
+      path: '/forms/water-testing',
+      load: () => import(/* webpackChunkName: 'resources' */ './forms/water-testing'),
+    },
+    {
+      path: '/forms/employee-training',
+      load: () => import(/* webpackChunkName: 'resources' */ './forms/employee-training'),
+    },
     // Wildcard routes, e.g. { path: '(.*)', ... } (must go last)
     {
       path: '(.*)',
