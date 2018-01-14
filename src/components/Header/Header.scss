@@ -14,28 +14,37 @@
 }
 
 .root {
-  background: #373277;
+  top: -70px;
+  background-color: #373277;
+  width: 100%;
   color: #fff;
+  height: 91vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-  margin: 0 auto;
-  padding: 20px 0;
-  max-width: var(--max-content-width);
-}
-
-.brand {
-  color: color(var(--brand-color) lightness(+10%));
-  text-decoration: none;
-  font-size: 1.75em; /* ~28px */
-}
-
-.brandTxt {
-  margin-left: 10px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner {
   text-align: center;
+  width: 50%;
+  max-width: 50%;
+
+  .bannerLeft {
+    float: left;
+  }
+
+  .bannerRight {
+    float: right;
+  }
 }
 
 .bannerTitle {

@@ -12,7 +12,8 @@ import PropTypes from 'prop-types';
 import { graphql, compose } from 'react-apollo';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import newsQuery from './news.graphql';
-import s from './Home.css';
+import s from './Home.scss';
+import Header from '../../components/Header';
 
 class Home extends React.Component {
   static propTypes = {
@@ -32,6 +33,7 @@ class Home extends React.Component {
     const { data: { loading, news } } = this.props;
     return (
       <div className={s.root}>
+        <Header />
         <div className={s.container}>
           <h1>React.js News</h1>
           {loading

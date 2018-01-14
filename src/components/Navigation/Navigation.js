@@ -20,13 +20,15 @@ class Navigation extends React.Component {
       <div className={s.root} role="navigation">
         <div className={s.half}>
           <div className={s.navLeft}>
-            <img
-              src={logoUrl}
-              srcSet={`${logoUrl2x} 2x`}
-              width="38"
-              height="38"
-              alt="React"
-            />
+            <Link className={s.link} to="/">
+              <img
+                src={logoUrl}
+                srcSet={`${logoUrl2x} 2x`}
+                width="38"
+                height="38"
+                alt="React"
+              />
+            </Link>
             <Link className={s.link} to="/about">
               About
             </Link>

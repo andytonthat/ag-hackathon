@@ -15,7 +15,6 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import normalizeCss from 'normalize.css';
 import s from './Layout.css';
 import Navigation from '../Navigation';
-import Header from '../Header';
 import Feedback from '../Feedback';
 import Footer from '../Footer';
 
@@ -28,7 +27,6 @@ class Layout extends React.Component {
     return (
       <div>
         <Navigation />
-        <Header />
         {this.props.children}
         <Feedback />
         <Footer />

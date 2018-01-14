@@ -35,6 +35,11 @@ a {
   color: #0074c2;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

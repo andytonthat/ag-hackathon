@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 75px;
+  height: 70px;
   float: right;
   background-color: black;
   position: relative;
@@ -25,13 +25,17 @@
   display: -ms-flexbox;
   display: flex;
   align-items: center;
+
+  img {
+    margin: 0 20px 0 10px;
+  }
 }
 
 .link {
   display: inline-block;
   padding: 3px 8px;
   text-decoration: none;
-  font-size: 1.125em; /* ~18px */
+  font-size: 0.8em; /* ~18px */
 }
 
 .link,
@@ -50,8 +54,10 @@
 
 .navLeft {
   float: left;
+  margin-left: 20px;
 }
 
 .navRight {
   float: right;
+  margin-right: 20px;
 }
