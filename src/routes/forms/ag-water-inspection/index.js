@@ -11,6 +11,7 @@ import React from 'react';
 // import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import Layout from '../../../components/Layout';
 import '../Product.css';
+import Subnav from '../../../components/Subnav';
 
 const title = 'Contact Us';
 function action() {
@@ -19,6 +20,7 @@ function action() {
     title,
     component: (
       <Layout>
+        <Subnav />
         <h1>Agricultural Water Inspection Log</h1>
         {/* <label> */}
         Depending on the contamination risk identified,{' '}

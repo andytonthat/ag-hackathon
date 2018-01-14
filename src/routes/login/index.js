@@ -10,6 +10,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import Login from './Login';
+import Subnav from '../../components/Subnav';
 
 const title = 'Log In';
 
@@ -19,6 +20,7 @@ function action() {
     title,
     component: (
       <Layout>
+        <Subnav />
         <Login title={title} />
       </Layout>
     ),

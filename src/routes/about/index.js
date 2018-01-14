@@ -11,6 +11,7 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import Page from '../../components/Page';
 import about from './about.md';
+import Subnav from '../../components/Subnav';
 
 function action() {
   return {
@@ -18,6 +19,7 @@ function action() {
     title: about.title,
     component: (
       <Layout>
+        <Subnav />
         <Page {...about} />
       </Layout>
     ),

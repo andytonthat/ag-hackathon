@@ -11,6 +11,7 @@ import React from 'react';
 // import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import Layout from '../../../components/Layout';
 // import formsQuery from '../../forms/forms.graphql';
+import Subnav from '../../../components/Subnav';
 
 const title = 'Contact Us';
 function action() {
@@ -18,6 +19,7 @@ function action() {
     title,
     component: (
       <Layout>
+        <Subnav />
         <form>
           <h1>Employee Training Log</h1>
           {/* <label> */}

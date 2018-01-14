@@ -9,6 +9,7 @@
 import React from 'react';
 import Layout from '../../../components/Layout';
 import '../Product.css';
+import Subnav from '../../../components/Subnav';
 
 const title = 'Contact Us';
 function action() {
@@ -17,6 +18,7 @@ function action() {
     title,
     component: (
       <Layout>
+        <Subnav />
         <h1>Example Traceback Log</h1>
         {/* <label> */}
         Recall Coordinator:

@@ -13,11 +13,14 @@ import s from './Home.scss';
 import Header from '../../components/Header';
 import computer from './computer.svg';
 import pin from './pin.svg';
+import hands from './hands.svg';
+import Navigation from '../../components/Navigation';
 
 class Home extends React.Component {
   render() {
     return (
       <div className={s.root}>
+        <Navigation />
         <Header />
         <div className={s.container}>
           <div className={s.aboutSection}>
@@ -33,7 +36,7 @@ class Home extends React.Component {
               </p>
             </div>
             <div>
-              <img src={computer} width="40%" alt="React" />
+              <img src={hands} width="40%" alt="React" />
               <p>
                 Manage requests at the touch of a button. Send reminders to, and
                 accept data from, valued partners across the globe.
