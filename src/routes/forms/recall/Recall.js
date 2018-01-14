@@ -13,7 +13,7 @@ import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 // import history from '../../../history';
-import s from './Recall.css';
+import s from './Recall.scss';
 
 class RecallForm extends React.Component {
   static propTypes = {
@@ -32,9 +32,6 @@ class RecallForm extends React.Component {
       recallReason: '',
     };
   }
-
-
-
 
   handleClear = () => {
     this.setState({
@@ -69,20 +66,35 @@ class RecallForm extends React.Component {
         <div className={s.container}>
           <h1>{this.props.title}</h1>
           <form onSubmit={this.handlePost}>
-            <h1>FORM 1: Property Information</h1>
+            <h2>FORM 1: Property Information</h2>
             {/* <label> */}
-            Recall Coordinator:
-            <input id="name" type="text" name="name" onChange={this.handleChange} />
+            <div className={s.label}>Recall Coordinator:</div>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              onChange={this.handleChange}
+            />
             {/* </label> */}
             <br />
             {/* <label> */}
-            Contact Information:
-            <input id="contactInfo" type="text" name="contactInfo" onChange={this.handleChange}  />
+            <div className={s.label}>Contact Information:</div>
+            <input
+              id="contactInfo"
+              type="text"
+              name="contactInfo"
+              onChange={this.handleChange}
+            />
             {/* </label> */}
             <br />
             {/* <label> */}
-            Date/Time:
-            <input id="dateTime" type="string" name="dateTime" onChange={this.handleChange}  />
+            <div className={s.label}>Date/Time:</div>
+            <input
+              id="dateTime"
+              type="string"
+              name="dateTime"
+              onChange={this.handleChange}
+            />
             {/* </label> */}
             <br />
             <p>
@@ -97,7 +109,13 @@ class RecallForm extends React.Component {
             (biological, chemical or physical contamination) and how the product
             deficiency was discovered.
             <br />
-            <textarea id="recallReason" name="recallReason" cols="125" rows="5" onChange={this.handleChange}  />
+            <textarea
+              id="recallReason"
+              name="recallReason"
+              cols="125"
+              rows="5"
+              onChange={this.handleChange}
+            />
             {/* </label> */}
             <br />
             <input type="submit" value="Submit" />
@@ -115,6 +133,7 @@ const CREATE_RECALL_MUTATION = gql`
     $dateTime: String,
     $recallReason: String
   ) {
+<<<<<<< HEAD
     name(
       name: $name){
         name
@@ -135,6 +154,13 @@ const CREATE_RECALL_MUTATION = gql`
       recallReason
     }
 }
+=======
+    name
+    contactInfo
+    dateTime
+    recallReason
+  }
+>>>>>>> development
 `;
 
 const RecallFormWithMutation = graphql(CREATE_RECALL_MUTATION, {

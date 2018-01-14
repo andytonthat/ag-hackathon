@@ -23,6 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .container {
@@ -35,21 +36,52 @@
 
 .banner {
   text-align: left;
-  width: 50%;
-  max-width: 50%;
-  margin: 0 0 0 10%;
+  margin: 0 0 0 5%;
   box-sizing: border-box;
 
   h1 {
-    padding: 0;
+    font-size: 2.5em;
+    padding: 10px 0;
+  }
+}
+
+.bannerLeft {
+  max-width: 50%;
+  float: left;
+  margin: 0;
+
+  p {
+    width: 70%;
   }
 
-  .bannerLeft {
-    float: left;
-  }
+  .contactButton {
+    margin: 10px 0;
+    background-color: #77c9d4;
+    width: 35%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  .bannerRight {
-    float: right;
+    div {
+      height: auto;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  }
+}
+
+.bannerRight {
+  position: relative;
+  right: 150px;
+  padding-top: 30px;
+  float: right;
+  width: 40%;
+  max-width: 40%;
+  margin: 0;
+
+  img {
+    width: 180%;
   }
 }
 
