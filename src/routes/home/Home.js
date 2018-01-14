@@ -24,7 +24,7 @@ class Home extends React.Component {
         <Header />
         <div className={s.container}>
           <div className={s.aboutSection}>
-            <h3>Follow the Aina</h3>
+            <h3>Follow the &#39;&#x0100;ina</h3>
             <p>A tool made by us, just for you. </p>
           </div>
           <div className={s.perks}>
