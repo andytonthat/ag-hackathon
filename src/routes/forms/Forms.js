@@ -24,27 +24,27 @@ class Forms extends React.Component {
         <div className={s.container}>
           <h1>{this.props.title}</h1>
           <p className={s.title}>General Requirements</p>
-          <Link className={s.link} to="/traceback">
+          <Link className={s.link} to="forms/traceback">
             Traceback Log
           </Link>
-          <br></br>
-          <Link className={s.link} to="/food-safety-plan">
+          <br />
+          <Link className={s.link} to="forms/food-safety-plan">
             Food Safety Plan Audit Log
           </Link>
-          <br></br>
-          <Link className={s.link} to="/standard-operating-procedures">
+          <br />
+          <Link className={s.link} to="forms/standard-operating-procedures">
             Standard Operating Procedures
           </Link>
-          <br></br>
+          <br />
           <Link className={s.link} to="/deviations-corrective-action">
             Deviations & Corrective Action Log
           </Link>
-          <br></br>
+          <br />
           <Link className={s.link} to="/forms/recall">
             Recall Information
           </Link>
-          <br></br>
-          <Link className={s.link} to="/product-information">
+          <br />
+          <Link className={s.link} to="/forms/product-information">
             Product Information
           </Link>
         </div>
@@ -53,26 +53,26 @@ class Forms extends React.Component {
           <Link className={s.link} to="/agricultural-inputs">
             Agricultural Inputs Form
           </Link>
-          <br></br>
+          <br />
           <Link className={s.link} to="/risk-assessment-land">
             Risk Assessment Form
           </Link>
-          <br></br>
+          <br />
         </div>
         <div className={s.container}>
           <p className={s.title}>Field Harvesting</p>
           <Link className={s.link} to="/ag-water-inspection">
             Risk Assessment Form
           </Link>
-          <br></br>
+          <br />
           <Link className={s.link} to="/risk-assessment-field">
             Risk Assessment Form
           </Link>
-          <br></br>
+          <br />
           <Link className={s.link} to="/water-testing">
             Water Testing Result Log
           </Link>
-          <br></br>
+          <br />
           <Link className={s.link} to="/employee-training">
             Employee Training Log
           </Link>

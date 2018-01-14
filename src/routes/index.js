@@ -55,13 +55,32 @@ const routes = {
       path: '/forms/recall',
       load: () => import(/* webpackChunkName: 'resources' */ './forms/recall'),
     },
+    {
+      path: '/forms/product-information',
+      load: () =>
+        import(/* webpackChunkName: 'resources' */ './forms/product-information'),
+    },
+    {
+      path: '/forms/traceback',
+      load: () =>
+        import(/* webpackChunkName: 'resources' */ './forms/traceback'),
+    },
+    {
+      path: '/forms/food-safety-plan',
+      load: () =>
+        import(/* webpackChunkName: 'resources' */ './forms/food-safety-plan'),
+    },
+    {
+      path: '/forms/standard-operating-procedures',
+      load: () =>
+        import(/* webpackChunkName: 'resources' */ './forms/standard-operating-procedures'),
+    },
 
     // Wildcard routes, e.g. { path: '(.*)', ... } (must go last)
     {
       path: '(.*)',
       load: () => import(/* webpackChunkName: 'not-found' */ './not-found'),
     },
-    
   ],
 
   async action({ next }) {
