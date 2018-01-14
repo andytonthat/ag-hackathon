@@ -16,10 +16,14 @@
 
 .container {
   margin: 0 auto;
-  padding: 20px 8px;
+  padding: 20px;
+  box-sizing: border-box;
   max-width: var(--max-content-width);
-  text-align: center;
   font-size: 1.5em; /* ~24px */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .link,
@@ -34,7 +38,34 @@
   text-decoration: underline;
 }
 
-.spacer {
-  padding-right: 15px;
-  padding-left: 15px;
+.contactLeft {
+  width: 50%;
+  height: auto;
+  display: inline-block;
+  float: left;
+  text-align: left;
+}
+
+.contactRight {
+  width: 50%;
+  height: auto;
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.contactButton {
+  border: 1px solid black;
+  width: 40%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+
+  div {
+    height: auto;
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }

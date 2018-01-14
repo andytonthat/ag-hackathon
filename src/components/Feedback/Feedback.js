@@ -9,26 +9,24 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Feedback.css';
+import Link from '../Link';
+import s from './Feedback.scss';
 
 class Feedback extends React.Component {
   render() {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <a
-            className={s.link}
-            href="https://gitter.im/kriasoft/react-starter-kit"
-          >
-            Ask a question
-          </a>
-          <span className={s.spacer}>|</span>
-          <a
-            className={s.link}
-            href="https://github.com/kriasoft/react-starter-kit/issues/new"
-          >
-            Report an issue
-          </a>
+          <div className={s.contactLeft}>
+            <p>We’re here to help you. We’re here every step of the way.</p>
+          </div>
+          <div className={s.contactRight}>
+            <Link className={s.link} to="/">
+              <div className={s.contactButton}>
+                <div>Contact Us</div>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     );

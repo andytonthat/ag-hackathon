@@ -8,52 +8,50 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql, compose } from 'react-apollo';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import newsQuery from './news.graphql';
 import s from './Home.scss';
 import Header from '../../components/Header';
+import computer from './computer.svg';
+import pin from './pin.svg';
 
 class Home extends React.Component {
-  static propTypes = {
-    data: PropTypes.shape({
-      loading: PropTypes.bool.isRequired,
-      news: PropTypes.arrayOf(
-        PropTypes.shape({
-          title: PropTypes.string.isRequired,
-          link: PropTypes.string.isRequired,
-          content: PropTypes.string,
-        }),
-      ),
-    }).isRequired,
-  };
-
   render() {
-    const { data: { loading, news } } = this.props;
     return (
       <div className={s.root}>
         <Header />
         <div className={s.container}>
-          <h1>React.js News</h1>
-          {loading
-            ? 'Loading...'
-            : news.map(item => (
-                <article key={item.link} className={s.newsItem}>
-                  <h1 className={s.newsTitle}>
-                    <a href={item.link}>{item.title}</a>
-                  </h1>
-                  <div
-                    className={s.newsDesc}
-                    // eslint-disable-next-line react/no-danger
-                    dangerouslySetInnerHTML={{ __html: item.content }}
-                  />
-                </article>
-              ))}
+          <div className={s.aboutSection}>
+            <h3>Follow the Aina</h3>
+            <p>A tool made by us, just for you. </p>
+          </div>
+          <div className={s.perks}>
+            <div>
+              <img src={computer} width="40%" alt="Computer" />
+              <p>
+                Send, receive and fill out forms without hassle. No more paper,
+                no more fuss!
+              </p>
+            </div>
+            <div>
+              <img src={computer} width="40%" alt="React" />
+              <p>
+                Manage requests at the touch of a button. Send reminders to, and
+                accept data from, valued partners across the globe.
+              </p>
+            </div>
+            <div>
+              <img src={pin} width="24%" alt="React" />
+              <p>
+                Track your shipments and their journey throughout the world.
+                Knowing where your product is and has been is vital to
+                maintaining trust with the community.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     );
   }
 }
 
-export default compose(withStyles(s), graphql(newsQuery))(Home);
+export default withStyles(s)(Home);
