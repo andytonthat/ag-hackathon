@@ -24,7 +24,7 @@ class Forms extends React.Component {
         <div className={s.container}>
           <h1>{this.props.title}</h1>
           <p className={s.title}>General Requirements</p>
-          <Link className={s.link} to="/traceback">
+          <Link className={s.link} to="forms/traceback">
             Traceback Log
           </Link>
           <br></br>
@@ -44,7 +44,7 @@ class Forms extends React.Component {
             Recall Information
           </Link>
           <br></br>
-          <Link className={s.link} to="/product-information">
+          <Link className={s.link} to="/forms/product-information">
             Product Information
           </Link>
         </div>
