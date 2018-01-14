@@ -38,6 +38,10 @@ class Navigation extends React.Component {
         </div>
         <div className={s.half}>
           <div className={s.navRight}>
+            <Link className={s.link} to="/profile">
+              Profile
+            </Link>
+            <span className={s.spacer}> | </span>
             <Link className={s.link} to="/login">
               Log in
             </Link>

@@ -52,6 +52,10 @@ const routes = {
       load: () => import(/* webpackChunkName: 'resources' */ './resources'),
     },
     {
+      path: '/profile',
+      load: () => import(/* webpackChunkName: 'resources' */ './profile'),
+    },
+    {
       path: '/forms/recall',
       load: () => import(/* webpackChunkName: 'resources' */ './forms/recall'),
     },
