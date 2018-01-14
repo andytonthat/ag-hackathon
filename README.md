@@ -1,4 +1,4 @@
-# Follow da 'Aina'
+# Follow da 'Aina
 
 Follow the Aina is an application where farmers can electronically register and fill out all required forms online. We provide an easy to use solution to track your farms products. We bring the best solution to you at the touch of a button.
 
@@ -7,6 +7,8 @@ Follow the Aina is an application where farmers can electronically register and 
 Track your shipments and their journey throughout the world. Knowing where your product is and has been is vital to maintaining trust with the community and for the continued success of your business.
 
 ## Contribute
+
+Suggestions and PRs are welcome!
 
 ### Local Installation
 
