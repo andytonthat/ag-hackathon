@@ -27,18 +27,23 @@ class Forms extends React.Component {
           <Link className={s.link} to="/traceback">
             Traceback Log
           </Link>
+          <br></br>
           <Link className={s.link} to="/food-safety-plan">
             Food Safety Plan Audit Log
           </Link>
+          <br></br>
           <Link className={s.link} to="/standard-operating-procedures">
             Standard Operating Procedures
           </Link>
+          <br></br>
           <Link className={s.link} to="/deviations-corrective-action">
             Deviations & Corrective Action Log
           </Link>
-          <Link className={s.link} to="/recall-information">
+          <br></br>
+          <Link className={s.link} to="/forms/recall">
             Recall Information
           </Link>
+          <br></br>
           <Link className={s.link} to="/product-information">
             Product Information
           </Link>
@@ -48,21 +53,26 @@ class Forms extends React.Component {
           <Link className={s.link} to="/agricultural-inputs">
             Agricultural Inputs Form
           </Link>
+          <br></br>
           <Link className={s.link} to="/risk-assessment-land">
             Risk Assessment Form
           </Link>
+          <br></br>
         </div>
         <div className={s.container}>
           <p className={s.title}>Field Harvesting</p>
           <Link className={s.link} to="/ag-water-inspection">
             Risk Assessment Form
           </Link>
+          <br></br>
           <Link className={s.link} to="/risk-assessment-field">
             Risk Assessment Form
           </Link>
+          <br></br>
           <Link className={s.link} to="/water-testing">
             Water Testing Result Log
           </Link>
+          <br></br>
           <Link className={s.link} to="/employee-training">
             Employee Training Log
           </Link>

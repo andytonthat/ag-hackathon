@@ -51,12 +51,17 @@ const routes = {
       path: '/resources',
       load: () => import(/* webpackChunkName: 'resources' */ './resources'),
     },
+    {
+      path: '/forms/recall',
+      load: () => import(/* webpackChunkName: 'resources' */ './forms/recall'),
+    },
 
     // Wildcard routes, e.g. { path: '(.*)', ... } (must go last)
     {
       path: '(.*)',
       load: () => import(/* webpackChunkName: 'not-found' */ './not-found'),
     },
+    
   ],
 
   async action({ next }) {
