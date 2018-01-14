@@ -19,59 +19,19 @@ function action() {
     title,
     component: (
       <Layout>
-        <h1>Example Traceback Log</h1>
-        <label>
-          Recall Coordinator:
-                <input type="text" name="name" />
-        </label>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <label>
-          Date:
-                <input type="text" name="name" />
-        </label>
-        <br></br>
-        <label>
-          Conducted By:
-                <input type="text" name="name" />
-        </label>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <label>
-          Lot:
-                <input type="text" name="name" />
-        </label>
-        <br></br>
-        <label>
-          Product Traced:
-                <input type="text" name="name" />
-        </label>
-        <br></br>
-
+      <h1>Deviations and Corrective Action Log</h1>
+      <h3>Instructions: List all major deviations, complaints and their related cause(s), corrective action(s), preventative measures and modified procedures. Record that employees have been trained on the new procedures.</h3>
       <table>
         <tr>
-          <th>Harvest Date:</th>
-          <th>Harvester:</th>
-          <th>Packing Date:</th>
-          <th>Packer:</th>
-          <th>Shipping Date:</th>
-          <th>Customer(s) Contacted:</th>
-          <th>Quantity Shipped and Requiring Recovery:</th>
-          <th>Amount of product remaining from original shipment:</th>
-          <th>Condition of product which could not be recalled:</th>
+          <th>Date/Time of Deviation or Complaint and Person Notified</th>
+          <th>Major Deviation/Complaint and Description</th>
+          <th>Corrective Action(s)</th>
+          <th>Prevention of Recurrence(e.g., training employee)</th>
+          <th>New/Modified Procedures</th>
+          <th>Employees Trained on New/ Modified Procedures?</th>
+          <th>Signature of Person Responsible for Re-Training/ Carrying out Deviation Procedure</th>
         </tr>
         <tr>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-        </tr>
-        <tr>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
@@ -88,23 +48,8 @@ function action() {
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
         </tr>
         <tr>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-        </tr>
-        <tr>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
@@ -121,12 +66,26 @@ function action() {
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
         </tr>
         <tr>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>

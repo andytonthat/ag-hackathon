@@ -36,7 +36,7 @@ class Forms extends React.Component {
             Standard Operating Procedures
           </Link>
           <br></br>
-          <Link className={s.link} to="/deviations-corrective-action">
+          <Link className={s.link} to="forms/deviations-corrective-action">
             Deviations & Corrective Action Log
           </Link>
           <br></br>
@@ -50,30 +50,30 @@ class Forms extends React.Component {
         </div>
         <div className={s.container}>
           <p className={s.title}>Previous Land Use & Site Selection</p>
-          <Link className={s.link} to="/agricultural-inputs">
+          <Link className={s.link} to="/forms/agricultural-inputs">
             Agricultural Inputs Form
           </Link>
           <br></br>
-          <Link className={s.link} to="/risk-assessment-land">
+          <Link className={s.link} to="forms/risk-assessment-land">
             Risk Assessment Form
           </Link>
           <br></br>
         </div>
         <div className={s.container}>
           <p className={s.title}>Field Harvesting</p>
-          <Link className={s.link} to="/ag-water-inspection">
+          <Link className={s.link} to="/forms/ag-water-inspection">
+          Agricultural Water Inspection Log
+          </Link>
+          <br></br>
+          <Link className={s.link} to="/forms/risk-assessment-field">
             Risk Assessment Form
           </Link>
           <br></br>
-          <Link className={s.link} to="/risk-assessment-field">
-            Risk Assessment Form
-          </Link>
-          <br></br>
-          <Link className={s.link} to="/water-testing">
+          <Link className={s.link} to="/forms/water-testing">
             Water Testing Result Log
           </Link>
           <br></br>
-          <Link className={s.link} to="/employee-training">
+          <Link className={s.link} to="/forms/employee-training">
             Employee Training Log
           </Link>
         </div>

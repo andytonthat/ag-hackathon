@@ -19,59 +19,20 @@ function action() {
     title,
     component: (
       <Layout>
-        <h1>Example Traceback Log</h1>
-        <label>
-          Recall Coordinator:
-                <input type="text" name="name" />
-        </label>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <label>
-          Date:
-                <input type="text" name="name" />
-        </label>
-        <br></br>
-        <label>
-          Conducted By:
-                <input type="text" name="name" />
-        </label>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <label>
-          Lot:
-                <input type="text" name="name" />
-        </label>
-        <br></br>
-        <label>
-          Product Traced:
-                <input type="text" name="name" />
-        </label>
-        <br></br>
-
+      <h1>Water Testing Result Log</h1>
+      <label>Save any documents providing information on test methods and test results from your laboratory.  </label>
+      <br></br>
       <table>
         <tr>
-          <th>Harvest Date:</th>
-          <th>Harvester:</th>
-          <th>Packing Date:</th>
-          <th>Packer:</th>
-          <th>Shipping Date:</th>
-          <th>Customer(s) Contacted:</th>
-          <th>Quantity Shipped and Requiring Recovery:</th>
-          <th>Amount of product remaining from original shipment:</th>
-          <th>Condition of product which could not be recalled:</th>
+          <th>Inspection Date:</th>
+          <th>Location/Field:</th>
+          <th>Physical, Chemical and/or Biological Contamination Risks Identified?</th>
+          <th>Corrective and/or Preventative Actions (if necessary):</th>
+          <th>Identified by (Initials):</th>
+          <th>Date Corrective Action Completed:</th>
+          <th>Completed by (Initials):</th>
         </tr>
         <tr>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-        </tr>
-        <tr>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
@@ -88,23 +49,8 @@ function action() {
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
         </tr>
         <tr>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
-        </tr>
-        <tr>
-          <td><input type="text" name="name" /></td>
-          <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
@@ -121,12 +67,26 @@ function action() {
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
         </tr>
         <tr>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+          <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
           <td><input type="text" name="name" /></td>
