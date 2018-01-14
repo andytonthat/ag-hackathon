@@ -11,7 +11,7 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import Forms from './Forms';
 
-const title = 'Contact Us';
+const title = 'Forms';
 
 function action() {
   return {
