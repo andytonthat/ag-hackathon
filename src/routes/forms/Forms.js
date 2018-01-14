@@ -9,8 +9,8 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Forms.scss';
 import Link from '../../components/Link';
+import s from './Forms.css';
 
 class Forms extends React.Component {
   render() {
