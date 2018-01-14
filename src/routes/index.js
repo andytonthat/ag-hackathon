@@ -63,6 +63,14 @@ const routes = {
       path: '/forms/traceback',
       load: () => import(/* webpackChunkName: 'resources' */ './forms/traceback'),
     },
+    {
+      path: '/forms/food-safety-plan',
+      load: () => import(/* webpackChunkName: 'resources' */ './forms/food-safety-plan'),
+    },
+    {
+      path: '/forms/standard-operating-procedures',
+      load: () => import(/* webpackChunkName: 'resources' */ './forms/standard-operating-procedures'),
+    },
 
     // Wildcard routes, e.g. { path: '(.*)', ... } (must go last)
     {
