@@ -15,7 +15,9 @@ const recall = {
     return (
       request.user && {
         id: request.user.id,
-        email: request.user.email,
+        contactInfo: request.user.contactInfo,
+        dateTime: request.user.dateTime,
+        recallReason: request.user.recallReason,
       }
     );
   },
