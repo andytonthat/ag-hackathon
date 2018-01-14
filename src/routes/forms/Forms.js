@@ -28,11 +28,11 @@ class Forms extends React.Component {
             Traceback Log
           </Link>
           <br></br>
-          <Link className={s.link} to="/food-safety-plan">
+          <Link className={s.link} to="forms/food-safety-plan">
             Food Safety Plan Audit Log
           </Link>
           <br></br>
-          <Link className={s.link} to="/standard-operating-procedures">
+          <Link className={s.link} to="forms/standard-operating-procedures">
             Standard Operating Procedures
           </Link>
           <br></br>

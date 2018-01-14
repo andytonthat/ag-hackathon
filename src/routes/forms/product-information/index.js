@@ -40,6 +40,8 @@ function action() {
           <td><input type="text" name="name" /></td>
         </tr>
       </table>
+      <br></br>
+      <input type="submit" value="Submit" />
       </Layout>
     ),
   };
