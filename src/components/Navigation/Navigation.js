@@ -8,29 +8,44 @@
  */
 
 import React from 'react';
-import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Navigation.scss';
 import Link from '../Link';
+import logoUrl from './logo-small.png';
+import logoUrl2x from './logo-small@2x.png';
 
 class Navigation extends React.Component {
   render() {
     return (
       <div className={s.root} role="navigation">
-        <Link className={s.link} to="/about">
-          About
-        </Link>
-        <Link className={s.link} to="/contact">
-          Contact
-        </Link>
-        <span className={s.spacer}> | </span>
-        <Link className={s.link} to="/login">
-          Log in
-        </Link>
-        <span className={s.spacer}>or</span>
-        <Link className={cx(s.link, s.highlight)} to="/register">
-          Sign up
-        </Link>
+        <div className={s.half}>
+          <div className={s.navLeft}>
+            <img
+              src={logoUrl}
+              srcSet={`${logoUrl2x} 2x`}
+              width="38"
+              height="38"
+              alt="React"
+            />
+            <Link className={s.link} to="/about">
+              About
+            </Link>
+            <Link className={s.link} to="/contact">
+              Contact
+            </Link>
+          </div>
+        </div>
+        <div className={s.half}>
+          <div className={s.navRight}>
+            <Link className={s.link} to="/login">
+              Log in
+            </Link>
+            <span className={s.spacer}> | </span>
+            <Link className={s.link} to="/register">
+              Sign up
+            </Link>
+          </div>
+        </div>
       </div>
     );
   }
