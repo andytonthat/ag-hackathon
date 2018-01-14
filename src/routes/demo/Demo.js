@@ -8,23 +8,32 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Demo.scss';
 import Subnav from '../../components/Subnav';
 
 class Demo extends React.Component {
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-  };
-
   render() {
     return (
       <div className={s.root}>
         <Subnav />
         <div className={s.container}>
-          <h1>{this.props.title}</h1>
-          <p>email@email.com</p>
+          <h1>Traceback Results</h1>
+          <h3>Farm</h3>
+          <br />Traceback ID: 123abc456z
+          <br />Name: Local Kine
+          <br />Contact Number: (808) 422-2222
+          <br />Product: Taro, Kale, Carrots
+          <h3>Distributors</h3>
+          <br />Shareful LLC
+          <br />Homegrown Dashers
+          <h3>Consumers</h3>
+          <br />808 Foodies
+          <br />Aloha Markets
+          <br />Beach Grindz
+          <br />Hawaiian Zebras
+          <br />Mahalo Plenty
         </div>
       </div>
     );
