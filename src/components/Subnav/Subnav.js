@@ -25,14 +25,14 @@ class Subnav extends React.Component {
             <Link className={s.link} to="/about">
               About
             </Link>
-            <Link className={s.link} to="/contact">
-              Contact
-            </Link>
             <Link className={s.link} to="/forms">
               Forms
             </Link>
             <Link className={s.link} to="/resources">
               Resources
+            </Link>
+            <Link className={s.link} to="/traceback">
+              Trace A Product
             </Link>
           </div>
         </div>
