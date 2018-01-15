@@ -1,4 +1,10 @@
-# Follow da 'Aina
+# Follow the 'Aina
+
+## Third Place Winner
+
+We participated in the 2018 Hawaii Agathon Hackathon and took 3rd place for our project! Check us out [here](https://devpost.com/software/follow-the-aina)
+
+## About
 
 Follow the Aina is an application where farmers can electronically register and fill out all required forms online. We provide an easy to use solution to track your farms products. We bring the best solution to you at the touch of a button.
 
