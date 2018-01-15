@@ -1,6 +1,6 @@
 # Follow the 'Aina
 
-## Third Place Winner
+## **_Third Place Winner_**
 
 We participated in the 2018 Hawaii Agathon Hackathon and took 3rd place for our project! Check us out [here](https://devpost.com/software/follow-the-aina)!
 
